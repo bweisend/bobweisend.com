@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="../main.js" type="text/javascript"></script>
+		<script src="order.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+		<link href="../main.css" rel="stylesheet" type="text/css">
+		<link href="order.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<title>DRAGGIN' - Bob Weisend</title>
+		<!--favicon-->
+		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../favicon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../favicon/manifest.json">
+		<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="../favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
+		<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div id='wrapper'>
+			<header>
+				<p>Reorder the images by dragging them to the corresponding boxes below</p>
+			</header>
+			<main>
+				<section id='top'>
+					<div class='box' id='top0'></div>
+					<div class='box' id='top1'></div>
+					<div class='box' id='top2'></div>
+					<div class='box' id='top3'></div>
+				</section>
+				<section id='middle'></section>
+				<section id='bottom'>
+					<div class='box dropMe' dropNum='0' id='bottom0'>1</div>
+					<div class='box dropMe' dropNum='1' id='bottom1'>2</div>
+					<div class='box dropMe' dropNum='2' id='bottom2'>3</div>
+					<div class='box dropMe' dropNum='3' id='bottom3'>4</div>
+				</section>
+			</main>
+			<footer>
+				<a class='button' id='backHome' href='../index.html'>BACK&nbsp;TO&nbsp;HOME</a>
+				<a class='button' id='checkYourAnswer'>CHECK YOUR ANSWER</a>
+				<a class='button' id='playAgain'>PLAY AGAIN!!</a>
+			</footer>
+		</div>
+		<div class='noshow' id='instructions'>
+			<div class='dialog'>
+				<div class='dialog-title'>HOW TO PLAY "DRAGGIN'"</div>
+				<p>It's easy:</p>
+				<ol>
+					<li>You will be presented with four items in random order.</li>
+					<li>The text below the items explains which order they belong in.</li>
+					<li>Drag each item to the boxes below (numbered 1 through 4).</li>
+					<li>Click 'CHECK YOUR ANSWERS' to see if you got it right!</li>
+				</ol>
+				<div class='dialog-close button'>LET'S PLAY!</div>
+			</div>
+		</div>
+	</body>
+</html>
