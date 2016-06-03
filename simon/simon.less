@@ -1,0 +1,89 @@
+// simon.css compiled by simon.less
+// VARIABLES
+@nav-radius: 5px;
+@text-color: white;
+@simon-radius: 250px;
+@off-opacity: 0.7;
+@on-opacity: 1.0;
+
+/* simon.css */
+header {
+	color: @text-color;
+	text-align: center;
+}
+body {
+	background-color: black;
+	font-family: sans-serif;
+}
+h1 {
+	line-height: 15px;
+}
+h3 {
+	line-height: 10px;
+}
+nav {
+	text-align: center;
+	a {
+		color: @text-color;
+		text-decoration: none;
+		padding: 5px 20px;
+		border: 2px solid white;
+		border-radius: @nav-radius;
+		-ms-border-radius: @nav-radius;
+		-webkit-border-radius: @nav-radius;
+		-moz-border-radius: @nav-radius;
+		margin: 5px;
+		opacity: @off-opacity;
+		&:hover {
+			opacity: @on-opacity;
+		}
+		&#newgame {
+			background-color: green;
+		}
+		&#resetHiScore {
+			background-color: blue;
+		}
+		&#backhome {
+			background-color: purple;
+		}
+	}
+}
+.simonSquare {
+	width: 50%;
+	opacity: @off-opacity;
+}
+tr {
+	height: 350px;
+}
+#simonTable {
+	table-layout: fixed;
+	width: 100%;
+}
+#simonGreen {
+	background-color: green;
+	border-top-left-radius: @simon-radius;
+	-ms-border-top-left-radius: @simon-radius;
+	-webkit-border-top-left-radius: @simon-radius;
+	-moz-border-top-left-radius: @simon-radius;
+}
+#simonRed {
+	background-color: red;
+	border-top-right-radius: @simon-radius;
+	-ms-border-top-right-radius: @simon-radius;
+	-webkit-border-top-right-radius: @simon-radius;
+	-moz-border-top-right-radius: @simon-radius;
+}
+#simonYellow {
+	background-color: yellow;
+	border-bottom-left-radius: @simon-radius;
+	-ms-border-bottom-left-radius: @simon-radius;
+	-webkit-border-bottom-left-radius: @simon-radius;
+	-moz-border-bottom-left-radius: @simon-radius;
+}
+#simonBlue {
+	background-color: blue;
+	border-bottom-right-radius: @simon-radius;
+	-ms-border-bottom-right-radius: @simon-radius;
+	-webkit-border-bottom-right-radius: @simon-radius;
+	-moz-border-bottom-right-radius: @simon-radius;
+}

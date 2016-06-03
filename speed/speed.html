@@ -1,0 +1,128 @@
+<!-- speedometer test completed on March 15, 2016 by Bob Weisend (bweisend@gmail.com) -->
+<html>
+	<head>
+		<style>
+		body {
+			font-family: 'Verdana', 'Tahoma', sans-serif;
+			font-size: 14pt;
+		}
+		#desc {
+			width: 420px;
+			border: 4px solid #6F4E37;
+			border-radius: 4px;
+			padding: 0px 10px;
+			background-color: #F7E7CE;
+		}
+		#desc span {
+			font-family: 'Courier New', monospace;
+			font-weight: bold;
+		}
+		#dial {
+			position: absolute;
+			left: 201px;
+			top: 80px;
+			-webkit-transform-origin: 50% 147px;
+			-moz-transform-origin: 50% 147px;
+			-ms-transform-origin: 50% 147px;
+			-o-transform-origin: 50% 147px;
+			transform-origin: 50% 147px;
+		}
+		</style>
+		<script>
+		var intervalId;
+		var rotateRatio = 1.323529; // 90 degrees ~= 68 mph
+
+		// changes the background color and turns the dial
+		function speedTest() {
+			var speed = randomSpeed();
+			var rotate = Math.round((speed - 90) * rotateRatio);
+			var color = getColor(speed);
+			document.getElementById('speed').innerHTML = "" + speed;
+			document.getElementById('color').innerHTML = color;
+			document.getElementById('meter').style.backgroundColor = getBackgroundColor(color);
+			document.getElementById('dial').style.transform = "rotate(" + rotate + "deg)";
+		}
+
+		// run speed test every 4 seconds
+		function initSpeedTest() {
+			// run it now...
+			speedTest(); 
+
+			// ... then every 4 seconds
+			intervalId = setInterval(speedTest, 4000); 
+		}
+
+		// returns integer between 0-180	
+		function randomSpeed() {
+			return Math.floor((Math.random() * 180) + 1);
+		}
+
+		// get the rgba background color for the meter
+		function getBackgroundColor(color) {
+			if (color == "green") {
+				return "rgba(0,128,0,0.2)";
+			} else if (color == "orange") {
+				return "rgba(255,153,0,0.2)";
+			} else if (color == "red") { 
+				return "rgba(255,0,0,0.2)";
+			} else {
+				clearInterval(intervalId);
+				alert("ERROR: invalid color '" + color + "' in getBackgroundColor");
+			}
+		}
+
+		// get the display-friendly color
+		function getColor(speed) {
+			if (speed <= 60) {
+				return "green";
+			} else if (speed >= 120) {
+				return "red";
+			} else {
+				return "orange";
+			}
+		}
+		</script>
+		<title>SPEEDOMETER - Bob Weisend</title>
+		<!--favicon-->
+		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../favicon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../favicon/manifest.json">
+		<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="../favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
+		<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+
+	<body onLoad="initSpeedTest();">
+		<img id='meter' src="meter.png"/>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Speed: <span id='speed'></span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Color: <span id='color'></span></b></p>
+		<img id='dial' src='dial.png'/>
+		<div id='desc'>
+			<p>I built this speedometer as part of a take home test for a company I was applying to. They said it should take 30-45 minutes to complete, but I needed about 2 hours. The hardest parts were 1) setting the <span>transform-origin</span> of the dial so that it would rotate at just the right spot (I'm still off by a pixel or two), and 2) how much to rotate the dial for each mph (I calculated 1.323529 degrees per mph (90/68), since 90 degrees on the meter equates to ~68 mph).</p>
+			<p>Here were the instructions:<p/>
+			<hr/>
+			<p>Task: Build a speedometer (Graphic assets attached)</p>
+			<p>Description: Build a single html page showing a speedometer with variant speeds that change every few seconds to a random value.</p>
+			<ol>
+				<li>The speed value should change every 4 seconds.</li>
+				<li>The random value would be between 0 and 180</li>
+				<li>The background color will be determined by the current speed value.</li>
+				<li>The thresholds for the background colors would be: 0-60: green. 61-120: orange. 121-180: red.</li>
+				<li>All colors (green,orange,red) will be used with 20% opacity.</li>
+			</ol>
+		</div>
+	</body>
+</html>

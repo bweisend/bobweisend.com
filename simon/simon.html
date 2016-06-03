@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="../main.js" type="text/javascript"></script>
+		<script src="simon.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+		<link rel="stylesheet" type="text/css" href="../main.css">
+		<link rel="stylesheet" type="text/css" href="simon.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<title>SIMON SAYS - Bob Weisend</title>
+		<!--favicon-->
+		<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="../favicon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="../favicon/manifest.json">
+		<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="../favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
+		<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<img id="thumb" src="thumbsup.gif"/>
+		<header>
+			<h3>Score: <span id="score">0</span>&nbsp;|&nbsp;High Score: <span id="hiscore">0</span></h3>
+			<!--<h3>Slow&nbsp;<input id="speed" type="range" min="1" max="2" value="1"/>&nbsp;Fast</h3>-->
+		</header>
+		<nav>
+			<a class="button" id="newgame" href="javascript:startGame()">START GAME</a>
+			<a class="button" id="resetHiScore" href="javascript:resetHiScore()">RESET HIGH SCORE</a>
+			<a class="button" id="backhome" href="../index.html">BACK TO HOME</a>
+		</nav>
+		<main>
+			<p/>
+			<table id="simonTable">
+				<tr>
+					<td class="simonSquare" id="simonGreen"></td>
+					<td class="simonSquare" id="simonRed"></td>
+				</tr>
+				<tr>
+					<td class="simonSquare" id="simonYellow"></td>
+					<td class="simonSquare" id="simonBlue"></td>
+				</tr>
+			</table>
+		</main>
+		<div class='noshow' id='instructions'>
+			<div class='dialog'>
+				<div class='dialog-title'>HOW TO PLAY "SIMON SAYS"</div>
+				<p>It's just like the Simon game:</p>
+				<ol>
+					<li>Click the 'START GAME' button to begin.</li>
+					<li>One of the four colors will randomly light up.</li>
+					<li>Click that color.</li>
+					<li>Then a second color will be added to the sequence.</li>
+					<li>Click both colors in the correct sequence.</li>
+					<li>This continues until you make a mistake. How long can you last?</li>
+				</ol>
+				<div class='dialog-close button'>LET'S PLAY!</div>
+			</div>
+		</div>
+		<div class='noshow' id='newHighScore'>
+			<div class='dialog'>
+				<div class='dialog-title'>HIGH SCORE!</div>
+				<p>Way to go! You got the highest score!</p>
+				<p>Enter your name:</p>
+				<input id='name' name='name'/>
+				<div id='setHigh' class='dialog-close button'>SUBMIT</div>
+			</div>
+		</div>
+		<div class='noshow' id='gameOver'>
+			<div class='dialog'>
+				<div class='dialog-title'>GAME OVER</div>
+				<p>Oops... you goofed. Thanks for playing!</p>
+				<div id='setHigh' class='dialog-close button'>CLOSE</div>
+			</div>
+		</div>
+	</body>
+</html>
