@@ -1,0 +1,55 @@
+body {
+	background-color: black;
+	background-image: url('quotes_bg.jpg');
+	color: white;
+	font-family: Oswald, sans-serif;
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	border: 5px solid white;
+	border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	padding: 20px;
+	display: none;
+}
+q {
+	text-align: left;
+	font-style: italic;
+	font-size: 28pt;
+}
+.source {
+	text-align: right;
+	font-size: 14pt;
+}
+.source:before {
+	content: '— ';
+}
+footer {
+	height: 95px;
+	width: 98%;
+	text-align: center;
+	margin: auto;
+	position: fixed;
+	bottom: 0;
+}
+footer > a {
+	background-color: black;
+}
+footer p a {
+	color: white;
+}
+footer p {
+	font-family: 'Courier New', monospace;
+}
+#music {
+	background-color: darkgreen;
+}
+:-webkit-full-screen body {background:url('quotes_bg.jpg');}
+:-moz-full-screen body {background:url('quotes_bg.jpg');}
+:full-screen body {background:url('quotes_bg.jpg');}

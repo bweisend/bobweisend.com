@@ -1,0 +1,73 @@
+Bob Weisend
+Saratoga, CA
+(408) 621-4232
+bweisend@gmail.com
+Website: http://bobweisend.com/
+LinkedIn: http://www.linkedin.com/in/bweisend
+
+SUMMARY
+
+An accomplished Senior Software Engineer and Web Developer with 15+ years of comprehensive experience. Expert in designing, constructing and maintaining enterprise-level software and web-based applications to dramatically enhance productivity. Development experience across the entire software stack, from the user interface to the database. Team contributor with experience in companies as small as 40 people and as large as 350,000. Has a passion for usability; revels in creating simple, responsive and intuitive interfaces that dazzle end users.
+
+TECHNICAL PROFICIENCIES
+
+Languages: HTML5, CSS3, JavaScript, AJAX, jQuery, PHP, Java, JSP, XML, Perl
+OS: Windows, UNIX, Linux, Android
+Web Services: SOAP (XML), REST (JSON), WSDL, CURL
+Database: MySQL, Oracle, RDBMS, Toad, normalization, sprocs, indexing
+Methodologies: Agile (XP, Scrum, TDD), Waterfall
+Other: MS Office, version control (SVN, CVS, Git, Perforce), bug trackers (Remedy, Mantis, Bugzilla), content management (TeamSite), metrics (SiteCatalyst), search (Google), IDEs (NetBeans, Eclipse)
+
+PROFESSIONAL EXPERIENCE
+
+HEWLETT PACKARD, Palo Alto, CA	2008-2016
+HP Enterprise Services, now Hewlett Packard Enterprise, specializes in software, services and consulting
+
+Software Engineer, Network Management Services (2013-2016)
+Key developer for productivity applications using the PHP Zend Framework
+* Constructed NetSRM application to give HP account managers a single entry-point to easily order networking services for their clients.
+* Designed and constructed a module within NetSRM to enable manager approvals, resulting in seamless workflow between cross-functional teams.
+* Implemented multiple jQuery plugins to improve usability.
+* Enabled automation by integrating NetSRM with multiple external applications using SOAP-based and REST-based APIs.
+
+Software Engineering Manager, HP Enterprise Services (2008-2013)
+Lead both the Partner Systems and TeamSite development teams on the Symantec account
+* Managed a global, cross-functional team of software engineers and business analysts.
+* Built a reputation for consistency and reliability by facilitating on-time delivery of planned quarterly releases and ad hoc projects for PartnerNet and TeamSite.
+* Elicited business requirements and produced accurate project estimates.
+* Managed Remedy queue for all enhancement requests; assigned requests to team for maximum efficiency and accelerated delivery times.
+
+SYMANTEC, Mountain View, CA	2005-2008
+Veritas was acquired by Symantec in 2005; known best for Norton Antivirus software
+
+Software Engineer, e-Business Applications
+Lead software engineer and web developer for Symantec.com and other e-Business applications
+* End-to-end integration of Veritas.com with Symantec.com after merger, giving users a single view of the entire Symantec suite of products and services.
+* Constructed "Products & Services" micro-site using Java and JSP, including calls-to-action to generate sales leads.
+* Collaborated with business analysts to convert high-level business requirements to system requirements, resulting in high customer satisfaction.
+* Lead a 15-20 member shared environment task force; facilitated weekly conference calls to improve coding standards and best practices across e-Business department.
+
+VERITAS, Mountain View, CA	2002-2005
+Maker of storage software, with expertise in backup/recovery, virtualization & performance management
+
+Software Engineer, e-Business Applications
+Lead software engineer and web developer for Veritas.com and other e-Business applications
+* Usability lead for all e-Business web applications; conducted real-time usability tests and incorporated feedback into future releases.
+* Development lead for end-to-end UI redesign of Veritas.com, providing an intuitive navigation model and a consistent branding experience for end users.
+* Integrated content management system (TeamSite) with an i18n service to present Veritas.com in 15 languages and 42 countries.
+
+PREVIOUS RELEVANT EXPERIENCE
+
+User Interface Engineer, DEPLOY SOLUTIONS, Mountain View, CA	
+Startup company developed an application suite to manage recruiting, hiring and retention of employees
+
+Senior Associate, CAMBRIDGE TECHNOLOGY PARTNERS, San Mateo, CA
+IT consulting firm that pioneered the fixed-time, fixed-price model; used rapid application development (RAD) methodology
+
+EDUCATION
+
+MBA in Managing Technology & Innovation
+Santa Clara University, Santa Clara, CA
+
+Bachelor of Science in Business Administration, Minor in Computer Science
+California Polytechnic State University, San Luis Obispo, CA
